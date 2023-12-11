@@ -7,16 +7,6 @@ Ce dépôt concerne les rendus de mailto:A_changer@etu.univ-tlse2.fr[Jonh Doe].
 
 == TP1
 
-.Exemple de code
-[source,java]
----
-@Given("today is Sunday")
-public void today_is_sunday() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
----
-
 Contenu du fichier : is_it_friday_yet.feature
 
 
@@ -35,7 +25,6 @@ Feature: It is Friday yet?
 
 
 
-
-image::img/SuccesTestTP1.png[width=80%]
+image::./img/SuccesTestTP1.PNG[width=80%]
 
 == TP2...
