@@ -60,7 +60,9 @@ Contenu du fichier : Order.java
             }
         }
 
-== TP2
+        image::./img/SuccesTestTP2.PNG[width=80%]
+
+== TP3
     
     ##Contenu du fichier : example.feature
 
@@ -104,5 +106,10 @@ Contenu du fichier : Order.java
 
     L'objectif de ce test est de verifier la présence d'un sujet dans un rapport PDF
 
+== TP4
 
-image::./img/SuccesTestTP2.PNG[width=80%]
+Documentation du TP3 en cukedoctor : 
+
+=GET("PDF",TP3\target\cukedoctor\documentation.adoc)
+
+
