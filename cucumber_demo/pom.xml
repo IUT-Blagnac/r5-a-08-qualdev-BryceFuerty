@@ -7,7 +7,51 @@
   <version>1.0-SNAPSHOT</version>
   <name>cucumber_demo</name>
   <url>http://maven.apache.org</url>
+    <properties>
+        <serenity.version>4.0.15</serenity.version>
+        <junit5.version>5.10.0</junit5.version>
+        <maven.surefire.version>3.1.2</maven.surefire.version>
+        <maven.failsafe.version>3.1.2</maven.failsafe.version>
+        <maven.compiler.version>3.11.0</maven.compiler.version>
+        <assertj.version>3.24.2</assertj.version>
+        <logback.version>1.2.10</logback.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <encoding>UTF-8</encoding>
+        <tags></tags>
+        <parallel.tests>4</parallel.tests>
+        <webdriver.base.url></webdriver.base.url>
+    </properties>
   <dependencies>
+    <dependency>
+        <groupId>net.serenity-bdd</groupId>
+        <artifactId>serenity-core</artifactId>
+        <version>${serenity.version}</version>
+        <scope>test</scope>
+    </dependency>
+    <dependency>
+        <groupId>net.serenity-bdd</groupId>
+        <artifactId>serenity-junit5</artifactId>
+        <version>${serenity.version}</version>
+        <scope>test</scope>
+    </dependency>
+    <dependency>
+        <groupId>net.serenity-bdd</groupId>
+        <artifactId>serenity-screenplay</artifactId>
+        <version>${serenity.version}</version>
+        <scope>test</scope>
+    </dependency>
+    <dependency>
+        <groupId>net.serenity-bdd</groupId>
+        <artifactId>serenity-ensure</artifactId>
+        <version>${serenity.version}</version>
+        <scope>test</scope>
+    </dependency>
+    <dependency>
+        <groupId>net.serenity-bdd</groupId>
+        <artifactId>serenity-screenplay-webdriver</artifactId>
+        <version>${serenity.version}</version>
+        <scope>test</scope>
+    </dependency>
     <dependency> 
         <groupId>io.cucumber</groupId>
         <artifactId>cucumber-java</artifactId>
@@ -26,6 +70,30 @@
         <version>4.12</version>
         <scope>test</scope>
     </dependency>
+    <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>${logback.version}</version>
+        </dependency>
+        <!-- JUNIT 5 DEPENDENCY-->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>${junit5.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>${junit5.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>${assertj.version}</version>
+            <scope>test</scope>
+        </dependency>
 </dependencies>
 <build>
         <plugins>

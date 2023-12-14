@@ -110,6 +110,6 @@ Contenu du fichier : Order.java
 
 Documentation du TP3 en cukedoctor : 
 
-=GET("PDF",TP3\target\cukedoctor\documentation.adoc)
+link:TP3\target\cukedoctor\documentation.adoc
 
-
+link:hellocucumber\target\cukedoctor\documentation.adoc
